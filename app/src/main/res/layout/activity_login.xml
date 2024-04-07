@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".login">
+
+    <ImageView
+        android:id="@+id/app_rectangle5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/rectangle5" />
+    <ImageView
+        android:id="@+id/group3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/group3" />
+    <ImageView
+        android:id="@+id/top_right_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="18dp"
+        android:src="@drawable/group1" />
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/app_rectangle5"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:paddingLeft="13dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edt_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <EditText
+            android:id="@+id/edt_password"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Password"
+            android:paddingLeft="13dp"
+            android:background="@drawable/edittext_background"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:inputType="textPassword" />
+
+        <TextView
+            android:id="@+id/txt_forgot_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/edt_password"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="4dp"
+            android:text="Forgot Password?"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:onClick="onForgotPasswordClicked"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"/>
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="900dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_forgot_password"
+            android:text="Log In"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"/>
+
+        <ImageView
+            android:id="@+id/app_orcontinuewith"
+            android:layout_width="100dp"
+            android:layout_height="75dp"
+            android:layout_below="@id/btnLogin"
+            android:src="@drawable/orcontinuewith"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <ImageView
+            android:id="@+id/app_google"
+            android:layout_width="400dp"
+            android:layout_height="110dp"
+            android:layout_below="@id/app_orcontinuewith"
+            android:src="@drawable/google"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/txtSignUpBelowGoogle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_google"
+            android:text="Don't have an account? Sign up "
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:onClick="onSignUpClicked"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

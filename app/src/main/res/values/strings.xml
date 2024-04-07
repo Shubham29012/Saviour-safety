@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Saviuor Safety App</string>
+    <string name="title_activity_getstarted">getstarted</string>
+    <string name="title_activity_main2">MainActivity2</string>
+</resources>

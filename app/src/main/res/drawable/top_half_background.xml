@@ -1,0 +1,9 @@
+<!-- top_half_background.xml -->
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background color for the bottom half -->
+    <item android:drawable="@android:color/white" />
+
+    <!-- Original image for the top half -->
+    <item android:drawable="@drawable/rectangle5"
+        android:gravity="top" />
+</layer-list>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87CEEB"
+    tools:context=".getstarted1">
+
+    <ImageView
+        android:id="@+id/app_group2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:src="@drawable/group2" />
+
+    <ImageView
+        android:id="@+id/app_logo1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_group2"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/logo1" />
+
+    <ImageView
+        android:id="@+id/app_movesafety"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo1"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/movesafety" />
+
+    <ImageView
+        android:id="@+id/app_startdaily"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_movesafety"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/startdaily" />
+
+    <ImageView
+        android:id="@+id/app_rectangle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_startdaily"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/rectangle1" />
+
+    <ImageView
+        android:id="@+id/app_getstarted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_rectangle1"
+        android:layout_centerHorizontal="true"
+        android:scaleType="centerInside"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/getstarted" />
+</RelativeLayout>
